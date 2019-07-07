@@ -114,7 +114,7 @@ class DissectRule
             if (in_array($key, $this->keys->kv_keys)) {
                 $len ++;
                 $new_value = substr($value, $len);
-                if (empty($new_value)) {
+                if ($new_value !== '0' && empty($new_value)) {
                     throw new \Exception("Illegal PHPValidator expression: The '{$key}' rule's value must not is empty");
                 }
                 $tmp[$key] = $new_value;

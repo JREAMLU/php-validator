@@ -305,7 +305,7 @@ class Validator
 
     private function check_num($parameter_name, $value)
     {
-        $rv = preg_match("/^[0-9]*$/", strval($value));
+        $rv = preg_match("/^[\-0-9]*$/", strval($value));
         if ($rv == 0) {
             $this->setMsg_one('num', $parameter_name);
             return false;
