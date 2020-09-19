@@ -20,7 +20,7 @@ return [
     'integer' => "参数 '{parameter-name}' 不是整数类型",
     'float' => "参数 '{parameter-name}' 不是浮点数类型",
     'array' => "参数 '{parameter-name}' 不是数组类型",
-    'object' => "参数 '{parameter-name}' 不是 ",
+    'object' => "参数 '{parameter-name}' 不是对象类型",
     'object_of' => "参数 '{parameter-name}' 不是 '{bind-value_1}' 对象类型",
     'integer_str' => "参数 '{parameter-name}' 不是有效的整数",
     'float_str' => "参数 '{parameter-name}' 不是有效的浮点数",
